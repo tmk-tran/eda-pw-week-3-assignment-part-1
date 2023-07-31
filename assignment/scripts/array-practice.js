@@ -110,6 +110,18 @@ console.log( 'Sorted original food list in reverse alphabetical order. The list 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+let string = myFavoriteFoods.reduce((acc, item, index ) => {
+    if ( index === 0 ) {
+        return item;
+    } else if (index === myFavoriteFoods.length-1 ) {
+        return acc + ' and ' + item;
+    } else {
+        return acc + ' and ' + item;
+    }
+}, '');
+
+console.log( 'Converted array to string. The string reads: ', string );
+
 
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
@@ -117,3 +129,5 @@ console.log( 'Sorted original food list in reverse alphabetical order. The list 
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+
