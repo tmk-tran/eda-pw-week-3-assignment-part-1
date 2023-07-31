@@ -129,5 +129,5 @@ console.log( 'Converted array to string. The string reads: ', string );
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-
-
+let combinedArray = myFavoriteFoods.concat( animalArray );
+console.log( 'Combined into new array. The new array reads: ', combinedArray );
